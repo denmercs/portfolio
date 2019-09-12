@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #242424;
+}
+
+.logo {
+    display: flex;
+
+    &-img {
+        padding: 1rem;
+    }
+
+    &-name {
+        align-self: center;
+    }
+}
+
+.nav {
+    
+    &-item {
+        padding: 0 .5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    
+}
