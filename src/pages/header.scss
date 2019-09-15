@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     background-color: #242424;
+    padding: .5rem 0;
 
     @media only screen and (max-width : 500px) {
         flex-direction: column;
@@ -28,7 +29,6 @@
             width: 32px;
             height: 32px;
             padding: .5rem;
-            
         }
     }
 

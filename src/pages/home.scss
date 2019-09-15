@@ -2,12 +2,32 @@
     background-color: #1C1C1C;
     text-align: center;
     color: white;
+    margin-top: 10rem;
 
     &-img {
         width: auto;
         height: 20rem;
-        padding-top: 5rem;
+        opacity: .7;
     }
 
 
+    h1 {
+        padding-top: 2rem;
+        font-size: 2em;
+    }
+
+    &-notes {
+        font-size: .75em;
+        text-transform: uppercase;
+        margin-top: 2rem;
+        padding: 1.5rem 0;
+        color: #585858;
+        border: #585858 solid 2px;
+
+        .f-awesome {
+            color: #585858;
+            width: 30px;
+            height: 30px;
+        }
+    }
 }
