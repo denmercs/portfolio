@@ -1,0 +1,27 @@
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10rem;
+    padding: 0 5rem;
+    
+    &-me {
+        
+
+        h3 {
+            color: #fff;
+        }
+
+        p {
+            color: #fff;
+        }
+    }
+
+    &-github {
+        width: 50%;
+        text-align: center;
+        color: #fff;
+
+    }
+}

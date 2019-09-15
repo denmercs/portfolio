@@ -14,14 +14,15 @@ const Home = () => {
             <div className="home-hero">
                 <Link to="/projects" className="home-hero-btn">	&lt;Coding&gt;</Link>
                 <img src={require("../assets/dennis.png")} alt="Dennis" className="home-hero-img"/>
-                <Link to="/designs" className="home-hero-btn">Design</Link>
+                <Link to="/designs" className="home-hero-btn">#Design</Link>
             </div>
             
             <p>“Formal education will make you a living; 
                 self-education will make you a fortune.”</p> 
 
             <div className="home-notes">
-                <p>Technologies used on this site are: HTML, CSS, SASS, React, Node, GIT, NPM. Github repo here: </p>
+                <p>Technologies used on this site are: HTML, CSS, SASS, React, Redux, Node, Axios, GIT, NPM. </p>
+                <p> Github repo here: </p>
                 <a href="https://github.com/denmercs/portfolio" target="_blank">
                     <FontAwesomeIcon icon={faCoffee} className="f-coffee"/>
                 </a>

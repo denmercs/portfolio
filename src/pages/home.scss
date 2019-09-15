@@ -2,7 +2,7 @@
     background-color: #1C1C1C;
     text-align: center;
     color: white;
-    margin-top: 10rem;
+    margin-top: 5rem;
 
 
     &-hero {
@@ -12,9 +12,10 @@
         &-btn {
             font-size: 2rem;
             font-family: 'Assistant', sans-serif;
+            font-weight: bold;
             text-transform: lowercase;
             text-decoration: none;
-            padding: 0 5rem;
+            padding: 0 15rem;
             align-self: center;
             color: #fff;
 
@@ -29,6 +30,7 @@
         &-img {
             width: auto;
             height: 15rem;
+            padding-top: 5rem;
         }
 
     }
@@ -37,7 +39,7 @@
     &-notes {
         font-size: .75em;
         text-transform: uppercase;
-        padding: 1.5rem 0;
+        padding: .5rem 0;
         color: #585858;
         border: #585858 solid 2px;
         margin: 0 auto;
