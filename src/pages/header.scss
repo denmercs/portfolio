@@ -49,6 +49,11 @@
         text-transform: uppercase;
         color: #fff;
 
+        &:hover, &:active {
+            cursor: pointer;
+            color: #52de97;
+        }
+
         @media only screen and (max-width: 500px) {
             font-size: .75rem;
             padding: .25rem;
