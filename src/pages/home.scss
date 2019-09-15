@@ -4,30 +4,57 @@
     color: white;
     margin-top: 10rem;
 
-    &-img {
-        width: auto;
-        height: 20rem;
-        opacity: .7;
-    }
+
+    &-hero {
+        display: flex;
+        justify-content: center;
+
+        &-btn {
+            font-size: 2rem;
+            font-family: 'Assistant', sans-serif;
+            text-transform: lowercase;
+            text-decoration: none;
+            padding: 0 5rem;
+            align-self: center;
+            color: #fff;
+
+            &:hover, &:active {
+                cursor: pointer;
+                color: #52de97;
+            }
 
 
-    h1 {
-        padding-top: 2rem;
-        font-size: 2em;
+    
+        }
+
+        &-img {
+            width: auto;
+            height: 15rem;
+        }
+
     }
+  
 
     &-notes {
         font-size: .75em;
         text-transform: uppercase;
-        margin-top: 2rem;
         padding: 1.5rem 0;
         color: #585858;
         border: #585858 solid 2px;
+        margin: 0 auto;
+        margin-top: 5rem;
+        width: 50%;
 
-        .f-awesome {
+        .f-coffee {
             color: #585858;
             width: 30px;
             height: 30px;
+
+            &:hover, &:active {
+                cursor: pointer;
+                color: #52de97;
+            }
+
         }
     }
 }
