@@ -11,7 +11,7 @@ import Projects from "./components/projects"
 
 function App() {
   return (
-    <div class="app">
+    <div className="app">
       <Header />
         
       <Switch>

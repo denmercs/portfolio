@@ -23,7 +23,7 @@ const Home = () => {
             <div className="home-notes">
                 <p>Technologies used on this site are: HTML, CSS, SASS, React, Redux, Node, Axios, GIT, NPM. </p>
                 <p> Github repo here: </p>
-                <a href="https://github.com/denmercs/portfolio" target="_blank">
+                <a href="https://github.com/denmercs/portfolio" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faCoffee} className="f-coffee"/>
                 </a>
             </div>
