@@ -1,5 +1,4 @@
 .home {
-    background-color: #1C1C1C;
     text-align: center;
     color: white;
     margin-top: 5rem;
@@ -60,3 +59,39 @@
         }
     }
 }
+
+.Matrix {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: .25;
+  }
+  
+  .MessageWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .Message {
+    color: white;
+    font-family: 'Courier New', Courier, monospace !important;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .Message span {
+    font-family: 'Courier New', Courier, monospace !important;
+  }

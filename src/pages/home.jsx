@@ -1,22 +1,24 @@
 import React from 'react';
 import "../pages/home.scss";
-import {Link} from "react-router-dom";
 import {Container} from "@material-ui/core";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-/**
- * PLAN is to import data from the backend 
- */
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import Code from "../components/Code";
+import _ from "lodash";
 
 const Home = () => {
+    const CODE_LINES_COUNT = 100;
+
     return (
         <Container className="home">
             <div className="home-hero">
-                <Link to="/projects" className="home-hero-btn">	&lt;Coding&gt;</Link>
                 <img src={require("../assets/dennis.png")} alt="Dennis" className="home-hero-img"/>
-                <Link to="/designs" className="home-hero-btn">#Design</Link>
             </div>
-            
+            <div className="MessageWrapper">
+                <div className="Matrix">
+                    {_.times(CODE_LINES_COUNT).map((_, i) => <Code key={i} />)}
+                </div>
+            </div>
             <p>“Formal education will make you a living; 
                 self-education will make you a fortune.”</p> 
 
