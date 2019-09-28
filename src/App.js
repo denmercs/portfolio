@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './App.css';
 import { Route, Switch} from "react-router-dom";
 
@@ -9,7 +9,14 @@ import About from "./components/about"
 import Design from "./components/design"
 import Projects from "./components/projects"
 
-function App() {
+import {getUser, getRepo} from "./redux/actions/userActions";
+import {connect} from "react-redux";
+
+const App = props => {
+  useEffect(() => {
+    props.getUser();
+    props.getRepo();
+  }, [props])
   return (
     <div className="app">
       <Header />
@@ -26,4 +33,9 @@ function App() {
   );
 }
 
-export default App;
+const mapDispatchToProps = {
+  getUser,
+  getRepo
+}
+
+export default connect(null, mapDispatchToProps)(App);

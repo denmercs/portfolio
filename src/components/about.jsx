@@ -1,39 +1,13 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import "./about.scss";
-import {Container} from "@material-ui/core";
+import {Container, Avatar} from "@material-ui/core";
 import {connect} from "react-redux";
-import {getUser} from "../util/actions/githubActions";
 
-
-const About = (props) => {
-    useEffect(() => {
-        props.getUser();
-    }, [props])
-    
+const About = props => {
+    const {avatar_url, name, followers, public_repos} = props.dataUser.user;
     return (
-        <>
-            {console.log('this ist he props', props)}
-        </>
-    )
-}
-
-const mapStateToProps = state => {
-    return {
-        user: state.user,
-        isLoading: state.isLoading,
-        errors: state.errors,
-        isSuccess: state.isSuccess
-    }
-}
-
-export default connect(mapStateToProps, {getUser})(About);
-
-
-/* 
-<div className="about">
-                
-        
-<Container maxWidth="md" className="about-me">
+        <div className="about">
+            <Container maxWidth="md" className="aboutStory">
                 <h3>About</h3>
                 <p>I’ve always sought out opportunities and challenges in my life. </p>
                 <div>
@@ -49,11 +23,22 @@ export default connect(mapStateToProps, {getUser})(About);
                     <li>from Health informatics to small business owner and entrepreneur to Software Developer</li>
                 </ul>
                 <p>I’ve never stopped studying and continue to help others and solve problems.</p>
-                
             </Container>
-            <Container className="about-github">
-               
+            <Container className="aboutGithub">
+                <h3>Github Account</h3>
+                <Avatar src={avatar_url} alt="profile picture" className="aboutImg"></Avatar>
+                <h5>{name}</h5>
+                <p>Followers: {followers}</p>
+                <p>Repositories: {public_repos}</p>
             </Container>
-            </div>
-            */
-           
+        </div>
+    )
+}
+
+const mapStateToProps = state => {
+    return {
+        dataUser: state.user
+    }
+}
+
+export default connect(mapStateToProps)(About);
