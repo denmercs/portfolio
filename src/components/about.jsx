@@ -1,12 +1,13 @@
 import React from "react";
 import "./about.scss";
 import { connect } from "react-redux";
+import { Container, Col, Image } from "react-bootstrap";
 
 const About = props => {
   const { avatar_url, name, followers, public_repos } = props.dataUser.user;
   return (
     <div className="about">
-      {/* <Container maxWidth="md" className="aboutStory">
+      <Container maxWidth="md" className="aboutStory">
         <h3>About</h3>
         <p>I’ve always sought out opportunities and challenges in my life. </p>
         <div>
@@ -40,15 +41,13 @@ const About = props => {
       </Container>
       <Container className="aboutGithub">
         <h3>Github Account</h3>
-        <Avatar
-          src={avatar_url}
-          alt="profile picture"
-          className="aboutImg"
-        ></Avatar>
+        <Col>
+          <Image src={avatar_url} roundedCircle bsClass="aboutImg" />
+        </Col>
         <h5>{name}</h5>
         <p>Followers: {followers}</p>
         <p>Repositories: {public_repos}</p>
-      </Container> */}
+      </Container>
     </div>
   );
 };

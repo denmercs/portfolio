@@ -25,7 +25,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <p>
+      <p className="quote">
         “Formal education will make you a living; self-education will make you a
         fortune.”
       </p>
