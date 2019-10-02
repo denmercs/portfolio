@@ -1,97 +1,93 @@
 .home {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
+  margin-top: 5rem;
+
+  &-hero {
+    display: flex;
+    justify-content: center;
+
+    &-btn {
+      font-size: 2rem;
+      font-family: "Assistant", sans-serif;
+      font-weight: bold;
+      text-transform: lowercase;
+      text-decoration: none;
+      margin: 0 10rem;
+      padding: 0 5rem;
+      align-self: center;
+      color: #fff;
+
+      &:hover,
+      &:active {
+        cursor: pointer;
+        color: #52de97;
+      }
+    }
+
+    &-img {
+      width: 15rem;
+      height: auto;
+      padding-top: 5rem;
+    }
+  }
+
+  &-notes {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+    color: #585858;
+    border: #585858 solid 2px;
+    margin: 0 auto;
     margin-top: 5rem;
+    width: 50%;
 
+    .f-coffee {
+      color: #585858;
+      width: 30px;
+      height: 30px;
 
-    &-hero {
-        display: flex;
-        justify-content: center;
-
-        &-btn {
-            font-size: 2rem;
-            font-family: 'Assistant', sans-serif;
-            font-weight: bold;
-            text-transform: lowercase;
-            text-decoration: none;
-            margin: 0 10rem;
-            padding: 0 5rem;
-            align-self: center;
-            color: #fff;
-
-            &:hover, &:active {
-                cursor: pointer;
-                color: #52de97;
-            }
-
-    
-        }
-
-        &-img {
-            width: auto;
-            height: 15rem;
-            padding-top: 5rem;
-        }
-
+      &:hover,
+      &:active {
+        cursor: pointer;
+        color: #52de97;
+      }
     }
-  
-
-    &-notes {
-        font-size: .75em;
-        text-transform: uppercase;
-        padding: .5rem 0;
-        color: #585858;
-        border: #585858 solid 2px;
-        margin: 0 auto;
-        margin-top: 5rem;
-        width: 50%;
-
-        .f-coffee {
-            color: #585858;
-            width: 30px;
-            height: 30px;
-
-            &:hover, &:active {
-                cursor: pointer;
-                color: #52de97;
-            }
-
-        }
-    }
+  }
 }
 
 .Matrix {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    opacity: .25;
-  }
-  
-  .MessageWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-  }
-  
-  .Message {
-    color: white;
-    font-family: 'Courier New', Courier, monospace !important;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
-    flex-wrap: wrap;
-  }
-  
-  .Message span {
-    font-family: 'Courier New', Courier, monospace !important;
-  }
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.05;
+}
+
+.MessageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.Message {
+  color: white;
+  font-family: "Courier New", Courier, monospace !important;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.Message span {
+  font-family: "Courier New", Courier, monospace !important;
+}

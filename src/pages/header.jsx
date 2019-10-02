@@ -1,28 +1,34 @@
-import React from 'react'
-import {Link} from "react-router-dom";
-import Logo from "../assets/logo - white.png"
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Logo from "../assets/logo - white.png";
 import "./header.scss";
-
-import { Typography, AppBar, Toolbar } from '@material-ui/core';
-
+import { Navbar, Nav, Container } from "react-bootstrap";
 
 const Header = () => {
-    return (
-        <AppBar>
-            <Toolbar className="header">
-                <div className="logo">
-                    <img src={Logo} alt="logo-img" className="logo-img" />
-                    <Typography className="logo-name" variant="h6" noWrap>Denmercs Folio</Typography>
-                </div>
-            <div className="nav">
-                <Link to="/" className="nav-item"> Home </Link>
-                <Link to="/about" className="nav-item">About</Link>
-                <Link to="/projects" className="nav-item">Projects</Link>
-                <Link to="/design" className="nav-item">Design</Link>
+  return (
+    <div className="header">
+      <Container>
+        <Navbar collapseOnSelect expand="lg" variant="dark" expand="lg">
+          <Navbar.Brand href="/" expand="md" variant="brand">
+            <div className="logo">
+              <img src={Logo} alt="logo-img" className="logo-img" />
+              <h1 className="logo-name">Denmercs Folio</h1>
             </div>
-            </Toolbar>
-        </AppBar>
-    )
-}
+          </Navbar.Brand>
+
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
+          <Navbar.Collapse>
+            <Nav className="mr-auto">
+              <Link to="/">Home</Link>
+              <Link to="/about">About</Link>
+              <Link to="/projects">Projects</Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </Container>
+    </div>
+  );
+};
 
 export default Header;
