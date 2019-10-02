@@ -1,33 +1,33 @@
 .about {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10rem;
-  padding: 0 5rem;
-  color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+    padding: 0 5rem;    
+    color: #fff;
 
-  .aboutStory {
-    padding: 0 5rem;
-  }
 
-  .aboutGithub {
-    text-align: center;
+    .aboutStory {
+        padding: 0 5rem;
+    }
+
+    .aboutGithub {
+        text-align: center;
+    }
 
     .aboutImg {
-      margin: 0 auto;
-      height: auto;
-      width: 30%;
+        margin: 0 auto;
+        height: auto;
+        width: 30%;
     }
-  }
 
-  h3 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
+    h3 {
+        font-size: 2rem;
+    }
 
-  h5 {
-    margin-top: 2rem;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5em;
-  }
+    h5 {
+        font-size: .8rem;
+        text-transform: uppercase;
+        letter-spacing: .5em;
+    }
 }
+
