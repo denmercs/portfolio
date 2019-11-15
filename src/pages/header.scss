@@ -1,6 +1,5 @@
 .header {
-  background-color: #252525;
-  padding: 0.5rem 0;
+  background-color: #090909;
 
   @media only screen and (max-width: 500px) {
     flex-direction: column;
@@ -18,13 +17,13 @@
   }
 
   &-img {
-    padding: 1rem;
+    padding: 0.5rem;
+    width: 16px;
+    height: 16px;
 
     @media only screen and (max-width: 500px) {
       display: flex;
       align-self: center;
-      width: 32px;
-      height: 32px;
     }
   }
 
@@ -42,11 +41,30 @@
     right: 0;
 
     a {
-      padding: 0 3rem;
+      padding: 0 2rem;
+      padding-top: 0.15rem;
       font-size: 1rem;
       text-transform: uppercase;
+      text-align: center;
       text-decoration: none;
       color: #fff;
+
+      &:hover,
+      &:active {
+        color: #90ee90;
+      }
+    }
+
+    .resume {
+      border: 1.5px solid #90ee90;
+      padding: 0 2rem;
+      color: #90ee90;
+
+      &:hover,
+      &:active {
+        background-color: #90ee90;
+        color: #252525;
+      }
     }
   }
 }

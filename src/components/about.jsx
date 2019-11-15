@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./about.scss";
 import { connect } from "react-redux";
+import { Container, Media } from "react-bootstrap";
+import GithubCalendar from "github-calendar";
 
 const About = props => {
   const { avatar_url, name, followers, public_repos } = props.dataUser.user;
+
+  useEffect(() => {
+    GithubCalendar(".calendar", "denmercs", {
+      responsive: true
+    });
+  }, []);
   return (
     <div className="about">
-      {/* <Container maxWidth="md" className="aboutStory">
+      <Container maxWidth="md" className="aboutStory">
         <h3>About</h3>
         <p>I’ve always sought out opportunities and challenges in my life. </p>
         <div>
@@ -26,13 +34,11 @@ const About = props => {
             Stack Developer
           </p>
         </div>
-        <p>Although my professional path has taken many twists and turns:</p>
-        <ul>
-          <li>
-            from Health informatics to small business owner and entrepreneur to
-            Software Developer
-          </li>
-        </ul>
+        <p>
+          Although my professional path has taken many twists and turns: from
+          Health informatics to small business owner and entrepreneur to
+          Software Developer
+        </p>
         <p>
           I’ve never stopped studying and continue to help others and solve
           problems.
@@ -40,15 +46,11 @@ const About = props => {
       </Container>
       <Container className="aboutGithub">
         <h3>Github Account</h3>
-        <Avatar
-          src={avatar_url}
-          alt="profile picture"
-          className="aboutImg"
-        ></Avatar>
         <h5>{name}</h5>
         <p>Followers: {followers}</p>
         <p>Repositories: {public_repos}</p>
-      </Container> */}
+        <div class="calendar"></div>
+      </Container>
     </div>
   );
 };

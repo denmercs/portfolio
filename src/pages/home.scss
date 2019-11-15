@@ -13,8 +13,6 @@
       font-weight: bold;
       text-transform: lowercase;
       text-decoration: none;
-      margin: 0 10rem;
-      padding: 0 5rem;
       align-self: center;
       color: #fff;
 
@@ -31,34 +29,10 @@
       padding-top: 5rem;
     }
   }
-
-  &-notes {
-    font-size: 0.75em;
-    text-transform: uppercase;
-    padding: 0.5rem 0;
-    color: #585858;
-    border: #585858 solid 2px;
-    margin: 0 auto;
-    margin-top: 5rem;
-    width: 50%;
-
-    .f-coffee {
-      color: #585858;
-      width: 30px;
-      height: 30px;
-
-      &:hover,
-      &:active {
-        cursor: pointer;
-        color: #52de97;
-      }
-    }
-  }
 }
 
 .Matrix {
   width: 100%;
-  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -75,19 +49,15 @@
   height: 100%;
 }
 
-.Message {
+.message {
   color: white;
   font-family: "Courier New", Courier, monospace !important;
   width: 100%;
   justify-content: center;
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding-top: 2rem;
   box-sizing: border-box;
   text-align: center;
   flex-wrap: wrap;
-}
-
-.Message span {
-  font-family: "Courier New", Courier, monospace !important;
 }

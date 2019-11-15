@@ -1,7 +1,5 @@
 import React from "react";
 import "../pages/home.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import Code from "../components/Code";
 import { Container } from "react-bootstrap";
 import _ from "lodash";
@@ -25,24 +23,11 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <p>
-        “Formal education will make you a living; self-education will make you a
-        fortune.”
-      </p>
-
-      <div className="home-notes">
+      <div className="message">
         <p>
-          Technologies used on this site are: HTML, CSS, SASS, React, Redux,
-          Node, Axios, GIT, NPM.{" "}
+          “Formal education will make you a living; self-education will make you
+          a fortune.”
         </p>
-        <p> Github repo here: </p>
-        <a
-          href="https://github.com/denmercs/portfolio"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faCoffee} className="f-coffee" />
-        </a>
       </div>
     </Container>
   );
