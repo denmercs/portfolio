@@ -1,20 +1,22 @@
 import React, { useEffect } from "react";
 import "./about.scss";
 import { connect } from "react-redux";
-import { Container, Media } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import GithubCalendar from "github-calendar";
+import { getUser } from "../redux/actions/userActions";
 
 const About = props => {
-  const { avatar_url, name, followers, public_repos } = props.dataUser.user;
+  const { name, followers, public_repos } = props.dataUser.user;
 
   useEffect(() => {
     GithubCalendar(".calendar", "denmercs", {
       responsive: true
     });
+    props.getUser();
   }, []);
   return (
     <div className="about">
-      <Container maxWidth="md" className="aboutStory">
+      <Container className="aboutStory">
         <h3>About</h3>
         <p>I’ve always sought out opportunities and challenges in my life. </p>
         <div>
@@ -49,7 +51,7 @@ const About = props => {
         <h5>{name}</h5>
         <p>Followers: {followers}</p>
         <p>Repositories: {public_repos}</p>
-        <div class="calendar"></div>
+        <div className="calendar"></div>
       </Container>
     </div>
   );
@@ -61,4 +63,8 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(About);
+const mapDispatchToProps = {
+  getUser
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(About);

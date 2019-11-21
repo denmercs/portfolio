@@ -8,13 +8,7 @@ import About from "./components/about";
 import Design from "./components/design";
 import Projects from "./components/projects";
 
-import { getUser } from "./redux/actions/userActions";
-import { connect } from "react-redux";
-
 const App = props => {
-  useEffect(() => {
-    props.getUser();
-  }, [props]);
   return (
     <div className="app">
       <Header />
@@ -31,11 +25,4 @@ const App = props => {
   );
 };
 
-const mapDispatchToProps = {
-  getUser
-};
-
-export default connect(
-  null,
-  mapDispatchToProps
-)(App);
+export default App;
