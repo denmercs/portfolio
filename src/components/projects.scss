@@ -1,0 +1,13 @@
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.75rem;
+  color: white;
+  margin-top: 2rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

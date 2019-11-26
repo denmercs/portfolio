@@ -1,6 +1,7 @@
 import React from "react";
 import Project from "../components/project";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import "./projects.scss";
 
 const Projects = () => {
   let projects = [
@@ -14,15 +15,25 @@ const Projects = () => {
       the system will dispatch the closet driver via geolocation and notify the mother that the driver is coming. 
       For more information please watch the video. `,
       location: "Uganda, Africa",
-      role: "Front and Back End Engineer"
+      role: "Full Stack Developer"
     },
     {
       id: 2,
-      company_name: "FDJ ROSMAR CORP.",
+      company_name: "Fdj Rosmar Corp.",
       application: "Tracking Web Platform for the truck fleet",
       description: `This application will allow the company to track their installed GPS devices to each of their fleet.
       The application will let allow the company to increase their sales and can dispatch any truck who is nearer in the area.`,
-      role: "Front and Back End Engineer"
+      location: "Philippines",
+      role: "Full Stack Developer"
+    },
+    {
+      id: 2,
+      company_name: "Fdj Rosmar Corp.",
+      application: "Tracking Web Platform for the truck fleet",
+      description: `This application will allow the company to track their installed GPS devices to each of their fleet.
+      The application will let allow the company to increase their sales and can dispatch any truck who is nearer in the area.`,
+      location: "Philippines",
+      role: "Full Stack Developer"
     }
   ];
 
@@ -30,15 +41,13 @@ const Projects = () => {
     <>
       <Container>
         <h2>Real Projects</h2>
-        {projects.map(project => (
-          <>
-            <Container>
-              <Row>
-                <Project projects={projects} key={project.id} />
-              </Row>
-            </Container>
-          </>
-        ))}
+        <div className="cards">
+          {projects.map(project => (
+            <>
+              <Project project={project} key={project.id} />
+            </>
+          ))}
+        </div>
       </Container>
     </>
   );
