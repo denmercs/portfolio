@@ -12,7 +12,7 @@ const Header = () => {
           <Navbar.Brand href="/" expand="md" variant="brand">
             <div className="logo">
               <img src={Logo} alt="logo-img" className="logo-img" />
-              <h1 className="logo-name">Denmercs Folio</h1>
+              <h1 className="logo-name">Dennis Mercado</h1>
             </div>
           </Navbar.Brand>
 
