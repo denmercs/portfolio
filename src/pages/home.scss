@@ -7,22 +7,6 @@
     display: flex;
     justify-content: center;
 
-    &-btn {
-      font-size: 2rem;
-      font-family: "Assistant", sans-serif;
-      font-weight: bold;
-      text-transform: lowercase;
-      text-decoration: none;
-      align-self: center;
-      color: #fff;
-
-      &:hover,
-      &:active {
-        cursor: pointer;
-        color: #52de97;
-      }
-    }
-
     &-img {
       width: 15rem;
       height: auto;
@@ -39,7 +23,7 @@
   right: 0;
   bottom: 0;
   z-index: -1;
-  opacity: 0.1;
+  opacity: 0.05;
 }
 
 .MessageWrapper {
@@ -51,6 +35,7 @@
 
 .message {
   color: white;
+  font-size: 1.5rem;
   font-family: "Courier New", Courier, monospace !important;
   width: 100%;
   justify-content: center;

@@ -1,13 +1,78 @@
-.card {
-  background-color: white;
-  padding: 2rem;
-  margin: 1rem;
-  width: auto;
-}
+.project {
+  padding: 2rem 0;
 
-h3 {
-  margin-top: 0;
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 1.5rem;
+  .card {
+    background-color: #dfe1e4;
+    padding: 2rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &-info {
+      width: 50%;
+      padding: 2rem;
+
+      h4 {
+        font-size: 2rem;
+        font-weight: 800;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 1rem;
+        text-align: justify;
+        text-justify: inter-word;
+      }
+
+      .application {
+        font-size: 1.25rem;
+        text-align: center;
+        padding: 1rem 0;
+      }
+    }
+    .video-container {
+      flex: 1;
+      max-width: 100%;
+      display: block;
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 25;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .card-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 4rem;
+
+      a {
+        font-size: 3em;
+        color: black;
+        padding: 0 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+
+        &:hover,
+        &:active {
+          color: #29a19c;
+        }
+      }
+    }
+  }
 }

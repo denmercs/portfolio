@@ -1,5 +1,6 @@
 import React from "react";
 import "./project.scss";
+import { Container } from "react-bootstrap";
 
 const Project = prop => {
   const {
@@ -8,42 +9,43 @@ const Project = prop => {
     description,
     location,
     role,
-    source
+    source,
+    repo,
+    website
   } = prop.project;
 
   return (
-    <>
+    <Container className="project">
       <div className="card">
-        <h3>{company_name}</h3>
-        <p>{application}</p>
-        <p>{description}</p>
-        <p>Location: {location}</p>
-        <p>Role: {role}</p>
-        <div
-          className="video"
-          style={{
-            position: "relative",
-            paddingBottom: "56.25%",
-            paddingTop: 25,
-            height: 10
-          }}
-        >
+        <div className="card-info">
+          <h4>{company_name}</h4>
+          <p className="application">{application}</p>
+          <p>{description}</p>
+          <p>Location: {location}</p>
+          <p>Role: {role}</p>
+
+          <div className="card-links">
+            <a href={repo} target="_blank" rel="noopener noreferrer">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <p>Github</p>
+            </a>
+            <a href={website} target="_blank" rel="noopener noreferrer">
+              <i class="fa fa-chrome" aria-hidden="true"></i>
+              <p>Website</p>
+            </a>
+          </div>
+        </div>
+        <div className="video-container">
           <iframe
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%"
-            }}
             src={source}
             frameborder="0"
             allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
+            autoplay="0"
           />
         </div>
       </div>
-    </>
+    </Container>
   );
 };
 

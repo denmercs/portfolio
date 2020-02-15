@@ -1,5 +1,5 @@
 .header {
-  background-color: #090909;
+  background-color: #171b21;
 
   @media only screen and (max-width: 500px) {
     flex-direction: column;
@@ -44,7 +44,8 @@
     a {
       padding: 0 2rem;
       padding-top: 0.15rem;
-      font-size: 1rem;
+      font-size: 1.25rem;
+      font-weight: 800;
       text-transform: uppercase;
       text-align: center;
       text-decoration: none;
@@ -52,18 +53,19 @@
 
       &:hover,
       &:active {
-        color: #90ee90;
+        color: #a3f7bf;
       }
     }
 
     .resume {
-      border: 1.5px solid #90ee90;
+      border: 1.5px solid #a3f7bf;
       padding: 0 2rem;
-      color: #90ee90;
+      color: #a3f7bf;
 
       &:hover,
       &:active {
-        background-color: #90ee90;
+        // background-color: #90ee90;
+        background-color: #a3f7bf;
         color: #252525;
       }
     }

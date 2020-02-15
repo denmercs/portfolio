@@ -1,13 +1,9 @@
-h2 {
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.75rem;
-  color: white;
-  margin-top: 2rem;
-}
+.projects {
+  padding: 2rem 0;
 
-.cards {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }

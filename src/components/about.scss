@@ -1,47 +1,42 @@
 .about {
+  padding: 2rem 0;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin: 1rem 0;
-  padding: 0 5rem;
   color: #fff;
 
   .aboutStory {
-    padding: 0 5rem;
-    margin-top: 2rem;
-    width: 100%;
-
-    h3 {
-      text-align: center;
-    }
-
-    &-text {
-      margin-top: 2rem;
-    }
+    font-size: 1.25rem;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   .aboutGithub {
+    padding: 2rem 0;
     text-align: center;
-    padding-top: 4rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  h5 {
-    font-size: 0.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.5em;
-    margin-top: 2rem;
+    letter-spacing: 0.05rem;
   }
 }
 
-.box,
-.activity-overview-box {
+.activity-overview-box,
+.contrib-footer {
   display: none;
 }
 
+.wday,
+.month {
+  font-size: 8px;
+  color: white;
+  display: none;
+}
+
+.js-calendar-graph-svg {
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+}
+
 .contrib-column {
-  font-size: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
 }
