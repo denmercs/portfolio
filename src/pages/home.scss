@@ -7,18 +7,19 @@
     display: flex;
     justify-content: center;
 
-    &-img {
-      width: 15rem;
+    img {
+      width: 25rem;
       height: auto;
       padding-top: 5rem;
 
       @media only screen and (max-width: 990px) {
+        width: 20rem;
         padding-top: 2rem;
       }
 
       @media only screen and (max-width: 440px) {
         padding-top: 1rem;
-        width: 10rem;
+        width: 15rem;
       }
     }
   }
