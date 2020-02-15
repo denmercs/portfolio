@@ -1,12 +1,19 @@
 .about {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   margin: 1rem 0;
   padding: 0 5rem;
   color: #fff;
 
   .aboutStory {
     padding: 0 5rem;
+    margin-top: 2rem;
+    width: 100%;
+
+    h3 {
+      text-align: center;
+    }
 
     &-text {
       margin-top: 2rem;
@@ -15,6 +22,7 @@
 
   .aboutGithub {
     text-align: center;
+    padding-top: 4rem;
   }
 
   h3 {

@@ -23,10 +23,15 @@ const Header = () => {
               <Link to="/">Home</Link>
               <Link to="/about">About</Link>
               <Link to="/projects">Projects</Link>
-              <a href="www.google.com" className="resume">
-                Resume
-              </a>
             </Nav>
+            <a
+              href="https://resume.creddle.io/resume/it3l2sf6wbv"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resume"
+            >
+              Resume
+            </a>
           </Navbar.Collapse>
         </Navbar>
       </Container>
