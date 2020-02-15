@@ -13,6 +13,7 @@ const About = props => {
       responsive: true
     });
     props.getUser();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <Container className="about">

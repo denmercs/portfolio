@@ -1,6 +1,10 @@
 .project {
   padding: 2rem 0;
 
+  @media only screen and (max-width: 440px) {
+    padding: 0.5rem 0;
+  }
+
   .card {
     background-color: #dfe1e4;
     padding: 2rem;
@@ -10,48 +14,58 @@
     justify-content: center;
     flex-wrap: wrap;
 
+    @media only screen and (max-width: 990px) {
+      flex-direction: column;
+    }
+
+    @media only screen and (max-width: 440px) {
+      padding: 0.5rem;
+    }
+
     &-info {
       width: 50%;
       padding: 2rem;
+
+      @media only screen and (max-width: 990px) {
+        width: 100%;
+      }
+
+      @media only screen and (max-width: 440px) {
+        padding: 0.8rem;
+      }
 
       h4 {
         font-size: 2rem;
         font-weight: 800;
         text-align: center;
         text-transform: uppercase;
+
+        @media only screen and (max-width: 440px) {
+          font-size: 1rem;
+        }
       }
 
       p {
         font-size: 1rem;
         text-align: justify;
         text-justify: inter-word;
+
+        @media only screen and (max-width: 440px) {
+          font-size: 0.8rem;
+          margin-bottom: 0.5rem;
+        }
       }
 
       .application {
         font-size: 1.25rem;
         text-align: center;
         padding: 1rem 0;
-      }
-    }
-    .video-container {
-      flex: 1;
-      max-width: 100%;
-      display: block;
-      position: relative;
-      padding-bottom: 56.25%;
-      padding-top: 25;
-      height: 0;
-      overflow: hidden;
-    }
 
-    .video-container iframe,
-    .video-container object,
-    .video-container embed {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+        @media only screen and (max-width: 440px) {
+          font-size: 0.8rem;
+          padding: 0.5rem 0;
+        }
+      }
     }
 
     .card-links {
@@ -59,6 +73,14 @@
       flex-direction: row;
       justify-content: center;
       margin-top: 4rem;
+
+      @media only screen and (max-width: 990px) {
+        margin-top: 2rem;
+      }
+
+      @media only screen and (max-width: 440px) {
+        margin-top: 1rem;
+      }
 
       a {
         font-size: 3em;
@@ -69,11 +91,41 @@
         text-align: center;
         cursor: pointer;
 
+        @media only screen and (max-width: 440px) {
+          font-size: 1.5rem;
+        }
+
         &:hover,
         &:active {
           color: #29a19c;
         }
       }
+    }
+
+    .video-container {
+      flex: 1;
+      max-width: 100%;
+      display: block;
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 5rem;
+      height: 0;
+      overflow: hidden;
+
+      @media only screen and (max-width: 440px) {
+        margin-bottom: 1rem;
+        padding-top: 1rem;
+      }
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   }
 }

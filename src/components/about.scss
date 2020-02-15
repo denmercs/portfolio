@@ -5,10 +5,22 @@
   flex-direction: column;
   color: #fff;
 
+  @media only screen and (max-width: 990px) {
+    padding: 2rem;
+  }
+
+  @media only screen and (max-width: 440px) {
+    padding: 1rem;
+  }
+
   .aboutStory {
     font-size: 1.25rem;
     text-align: justify;
     text-justify: inter-word;
+
+    @media only screen and (max-width: 990px) {
+      font-size: 0.8rem;
+    }
   }
 
   .aboutGithub {
@@ -16,6 +28,10 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
+
+    @media only screen and (max-width: 990px) {
+      font-size: 0.8rem;
+    }
   }
 }
 
@@ -26,8 +42,6 @@
 
 .wday,
 .month {
-  font-size: 8px;
-  color: white;
   display: none;
 }
 
@@ -39,4 +53,11 @@
 .contrib-column {
   margin-top: 1rem;
   font-size: 0.8rem;
+  @media only screen and (max-width: 990px) {
+    font-size: 0.25rem;
+  }
+
+  @media only screen and (max-width: 440px) {
+    display: none;
+  }
 }

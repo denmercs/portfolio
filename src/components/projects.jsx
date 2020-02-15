@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "../components/project";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "./projects.scss";
 
 const Projects = () => {
@@ -17,7 +17,8 @@ const Projects = () => {
       role: "Full Stack Developer",
       source: "https://youtu.be/aRh1vqXKpQo",
       repo: "www.google.com",
-      website: "www.google.com"
+      website: "www.google.com",
+      direction: "left"
     },
     {
       id: 2,
@@ -32,7 +33,8 @@ const Projects = () => {
       role: "Full Stack Developer",
       source: "https://www.youtube.com/embed/KM4jNYUOg7Y",
       repo: "https://github.com/labs17-s-a-f-e",
-      website: "https://bit.ly/2UREDVN"
+      website: "https://bit.ly/2UREDVN",
+      direction: "right"
     },
     {
       id: 3,
@@ -44,7 +46,8 @@ const Projects = () => {
       role: "Front End Developer",
       source: "https://youtu.be/aRh1vqXKpQo",
       repo: "https://github.com/bwj19-wedding-planner-portfolio",
-      website: "https://fervent-yalow-1663cf.netlify.com/"
+      website: "https://fervent-yalow-1663cf.netlify.com/",
+      direction: "left"
     }
   ];
 

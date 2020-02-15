@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Route, Switch } from "react-router-dom";
 import "./util/custom.scss";
 import Home from "./pages/home";
 import Header from "./pages/header";
 import Footer from "./pages/footer";
 import About from "./components/about";
-import Design from "./components/design";
 import Projects from "./components/projects";
 
 const App = props => {
@@ -16,7 +15,6 @@ const App = props => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
-        <Route path="/design" component={Design} />
         <Route path="/projects" component={Projects} />
       </Switch>
 

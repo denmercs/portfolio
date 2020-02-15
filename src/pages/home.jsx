@@ -1,12 +1,9 @@
 import React from "react";
 import "../pages/home.scss";
-import Code from "../components/Code";
 import { Container } from "react-bootstrap";
-import _ from "lodash";
+import { Animated } from "react-animated-css";
 
 const Home = () => {
-  const CODE_LINES_COUNT = 100;
-
   return (
     <Container className="home">
       <div className="home-hero">
@@ -16,19 +13,14 @@ const Home = () => {
           className="home-hero-img"
         />
       </div>
-      <div className="MessageWrapper">
-        <div className="Matrix">
-          {_.times(CODE_LINES_COUNT).map((_, i) => (
-            <Code key={i} />
-          ))}
+      <Animated isVisible={true} className="animated bounce delay-4s">
+        <div className="message ">
+          <p>
+            “Formal education will make you a living; self-education will make
+            you a fortune.”
+          </p>
         </div>
-      </div>
-      <div className="message">
-        <p>
-          “Formal education will make you a living; self-education will make you
-          a fortune.”
-        </p>
-      </div>
+      </Animated>
     </Container>
   );
 };

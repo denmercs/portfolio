@@ -37,12 +37,14 @@ const Project = prop => {
         </div>
         <div className="video-container">
           <iframe
+            title="youtube"
             src={source}
             frameBorder="0"
             allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             autoPlay="0"
             rel="0"
+            scrolling="0"
           />
         </div>
       </div>
