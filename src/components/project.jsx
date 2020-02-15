@@ -26,11 +26,11 @@ const Project = prop => {
 
           <div className="card-links">
             <a href={repo} target="_blank" rel="noopener noreferrer">
-              <i class="fa fa-github" aria-hidden="true"></i>
+              <i className="fa fa-github" aria-hidden="true"></i>
               <p>Github</p>
             </a>
             <a href={website} target="_blank" rel="noopener noreferrer">
-              <i class="fa fa-chrome" aria-hidden="true"></i>
+              <i className="fa fa-chrome" aria-hidden="true"></i>
               <p>Website</p>
             </a>
           </div>
@@ -38,10 +38,11 @@ const Project = prop => {
         <div className="video-container">
           <iframe
             src={source}
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            autoplay="0"
+            allowFullScreen
+            autoPlay="0"
+            rel="0"
           />
         </div>
       </div>
