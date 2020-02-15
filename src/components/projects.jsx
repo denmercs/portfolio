@@ -7,6 +7,16 @@ const Projects = () => {
   let projects = [
     {
       id: 1,
+      company_name: "CampRV",
+      application: "CRUD system and Google maps integration",
+      description: `A fully functional web application that allows users can get access and use these previously 
+      unknown/unavailable sites, and Landowners get to cash in on otherwise dormant or underutilized land.`,
+      location: "USA",
+      role: "Full Stack Developer",
+      source: "https://youtu.be/aRh1vqXKpQo"
+    },
+    {
+      id: 2,
       company_name: "Safe Mother's, Safe Babies",
       application: "SMS Dispatch System and Admin Web Application",
       description: `Safe Mothers, Safe Babies (SAFE) believes that no woman should die while bringing life into the world, 
@@ -15,32 +25,25 @@ const Projects = () => {
       the system will dispatch the closet driver via geolocation and notify the mother that the driver is coming. 
       For more information please watch the video. `,
       location: "Uganda, Africa",
-      role: "Full Stack Developer"
+      role: "Full Stack Developer",
+      source: "https://www.youtube.com/embed/KM4jNYUOg7Y"
     },
     {
-      id: 2,
-      company_name: "Fdj Rosmar Corp.",
-      application: "Tracking Web Platform for the truck fleet",
-      description: `This application will allow the company to track their installed GPS devices to each of their fleet.
-      The application will let allow the company to increase their sales and can dispatch any truck who is nearer in the area.`,
-      location: "Philippines",
-      role: "Full Stack Developer"
-    },
-    {
-      id: 2,
-      company_name: "Fdj Rosmar Corp.",
-      application: "Tracking Web Platform for the truck fleet",
-      description: `This application will allow the company to track their installed GPS devices to each of their fleet.
-      The application will let allow the company to increase their sales and can dispatch any truck who is nearer in the area.`,
-      location: "Philippines",
-      role: "Full Stack Developer"
+      id: 3,
+      company_name: "Planful",
+      application:
+        "Where Wedding Planners Can Show Off Their Work And Newly Engaged Can Find The Perfect Planner For Their Special Day",
+      description: `This is a build week project at Lambda School. The application will let the wedding planners show off 
+      their work and newly engaged couple to perfectly plan their special day.`,
+      role: "Full Stack Developer",
+      source: "https://youtu.be/aRh1vqXKpQo"
     }
   ];
 
   return (
     <>
       <Container>
-        <h2>Real Projects</h2>
+        <h2>Projects</h2>
         <div className="cards">
           {projects.map(project => (
             <>

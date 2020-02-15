@@ -7,7 +7,8 @@ const Project = prop => {
     application,
     description,
     location,
-    role
+    role,
+    source
   } = prop.project;
 
   return (
@@ -35,9 +36,9 @@ const Project = prop => {
               width: "100%",
               height: "100%"
             }}
-            src="https://www.youtube.com/embed/KM4jNYUOg7Y"
+            src={source}
             frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           />
         </div>
