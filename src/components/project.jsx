@@ -46,7 +46,7 @@ const Project = prop => {
               allowFullScreen
               autoPlay="0"
               rel="0"
-              scrolling="0"
+              scrolling="no"
             />
           </div>
         </div>
