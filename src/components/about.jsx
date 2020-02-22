@@ -22,23 +22,20 @@ const About = props => {
         <h3>About</h3>
         <div className="aboutStory">
           <p>
-            I’ve always sought out opportunities and challenges in my life.
-            Raise and born in The Philippines, studied nursing school in college
-            at the same time doing free lance graphic design work online and
-            learning how to code.
+            I’ve always sought out opportunities for growth in my life. Raised
+            and born in the Philippines, I studied nursing in college.
+            Concurrently, I was working as a freelance graphic designer online
+            and learning how to code in my spare time. I moved here in the
+            United States on 2015 and I have been pursuing my passion and dream
+            to become a Software Developer.
           </p>
-
           <p>
-            Moved here in the United States on 2015, I have been pursuing my
-            passion and dream to be a Software Developer. Enrolled in a bootcamp
-            called Lambda School to learn more about Full Stack Developer
-          </p>
-
-          <p>
-            Although my professional path has taken many twists and turns: from
-            Health informatics to small business owner and entrepreneur to
-            Software Developer. I’ve never stopped studying and continue to help
-            others and solve problems.
+            I enrolled in a bootcamp called Lambda School to become a Full Stack
+            Developer. Although my professional path has taken many twists and
+            turns: from working in health informatics to becoming a small
+            business owner and entrepreneur to Software Developer. I’ve never
+            stopped studying and pursuing professional growth. I strive to use
+            my skills in helping clients fulfill their business needs using IT.
           </p>
         </div>
         <div className="aboutGithub">
