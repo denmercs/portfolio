@@ -1,7 +1,7 @@
 .home {
   text-align: center;
   color: white;
-  margin-top: 5rem;
+  margin-top: 3rem;
 
   &-hero {
     display: -webkit-box;
@@ -11,16 +11,13 @@
 
     img {
       width: auto;
-      height: 600px;
-      padding-top: 5rem;
+      height: 400px;
 
       @media only screen and (max-width: 990px) {
-        height: 400px;
-        padding-top: 2rem;
+        height: 300px;
       }
 
       @media only screen and (max-width: 440px) {
-        padding-top: 1rem;
         width: 15rem;
       }
     }
