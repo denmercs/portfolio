@@ -9,12 +9,18 @@
     background-color: #dfe1e4;
     padding: 2rem;
     margin: 1rem;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     flex-direction: row;
+    -webkit-box-pack: center;
     justify-content: center;
     flex-wrap: wrap;
 
     @media only screen and (max-width: 990px) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
       flex-direction: column;
     }
 
@@ -68,8 +74,12 @@
     }
 
     .card-links {
+      display: -webkit-box;
       display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
       flex-direction: row;
+      -webkit-box-pack: center;
       justify-content: center;
       margin-top: 4rem;
 
@@ -107,6 +117,7 @@
     }
 
     .video-container {
+      -webkit-box-flex: 1;
       flex: 1;
       max-width: 100%;
       display: block;
