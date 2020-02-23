@@ -7,12 +7,13 @@ const Projects = () => {
   let projects = [
     {
       id: 1,
-      company_name: "CampRV",
-      application: "CRUD system with Google Maps API integration",
-      description: `CampRV is a fictional company that connects land owners and 5th wheel / RV owners. 
-      RV parks are often cramped and in many areas are booked months in advance. Collectively, landowners hold vast swaths of unused land 
-      that could be earning them revenue.  By using CampRV, RV Owners get  access to use these previously unknown/unavailable sites, 
-      and Landowners get to cash in on otherwise dormant or underutilized land.`,
+      company_name: "Denmercs Photography LLC",
+      application: "Wedding Photographer Website",
+      description: `
+      A fully functional web application that allows wedding clients to inquire, message the photographer through the chatbox, and all with the integration of Pinterest for portfolio albums.
+      All the UI, Graphics, and Pictures were created by Dennis Mercado. This is a real project built with Backend and Front End development in mind.
+      Developed full-stack web applications with processed, analyzed and rendered data visually. Planned, wrote and executed the file structure for the application and setup Redux as the state management tool.
+      `,
       location: "USA",
       role: "Full Stack Developer",
       source: "https://youtu.be/aRh1vqXKpQo",
@@ -38,15 +39,21 @@ const Projects = () => {
     },
     {
       id: 3,
-      company_name: "Planful",
-      application: "Fully functional CRUD web application",
-      description: `This is a buildweek project at Lambda School. The application will let the wedding planners show off 
-      their work and newly engaged couple to perfectly plan their special day. `,
+      company_name: "5th Wheel",
+      application: "Software for campers",
+      description: `A fully functional web application 
+      that allows users can get access and use these previously unknown/unavailable sites, 
+      and Landowners get to cash in on otherwise dormant or underutilized land.
+      This is a personal project built with Backend and Front End development in mind. 
+      Developed full-stack web applications with processed, analyzed and rendered data visually.
+      Planned, wrote and executed the file structure for the application and setup Redux as the state management tool. 
+      Styled components and connect the Redux state in the web application.
+      Researched color theory and came up with a color palette appropriate for this project.`,
       location: "USA",
       role: "Front End Developer",
-      source: "https://youtu.be/aRh1vqXKpQo",
-      repo: "https://github.com/bwj19-wedding-planner-portfolio",
-      website: "https://fervent-yalow-1663cf.netlify.com/",
+      source: "https://s5.gifyu.com/images/FifthDemo.93311408.gif",
+      repo: "https://github.com/buildweek-5th-wheel",
+      website: "https://5th-wheel.now.sh/",
       direction: "left"
     }
   ];

@@ -23,7 +23,7 @@
     }
 
     &-info {
-      width: 50%;
+      width: 40%;
       padding: 2rem;
 
       @media only screen and (max-width: 990px) {
@@ -48,7 +48,6 @@
       p {
         font-size: 1rem;
         text-align: justify;
-        text-justify: inter-word;
 
         @media only screen and (max-width: 440px) {
           font-size: 0.8rem;
@@ -100,6 +99,11 @@
           color: #29a19c;
         }
       }
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: auto;
     }
 
     .video-container {

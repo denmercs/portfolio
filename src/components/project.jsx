@@ -37,17 +37,25 @@ const Project = prop => {
               </a>
             </div>
           </div>
-          <div className="video-container">
-            <iframe
-              title="youtube"
-              src={source}
-              frameBorder="0"
-              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              autoPlay="0"
-              rel="0"
-              scrolling="no"
-            />
+          <div className="video-container photo-container">
+            {/\.(gif|jpg|jpeg|tiff|png)$/i.test(source) ? (
+              <img
+                className="picture-container"
+                src={source}
+                alt="project image"
+              />
+            ) : (
+              <iframe
+                title="youtube"
+                src={source}
+                frameBorder="0"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                autoPlay="0"
+                rel="0"
+                scrolling="no"
+              />
+            )}
           </div>
         </div>
       </Container>
