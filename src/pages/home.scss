@@ -1,7 +1,8 @@
 .home {
   text-align: center;
   color: white;
-  margin-top: 3rem;
+  padding-top: 5rem;
+  height: 100vh;
 
   &-hero {
     display: -webkit-box;
@@ -46,5 +47,15 @@
     font-size: 0.8rem;
     margin-top: 1rem;
     padding: 1rem;
+  }
+}
+
+.repoMessage {
+  margin-top: 4rem;
+  font-size: 14px;
+
+  .stackIcons {
+    font-size: 2rem;
+    padding: 0.25rem 0;
   }
 }
