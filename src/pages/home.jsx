@@ -25,7 +25,7 @@ const Home = () => {
 
           <div className="repoMessage">
             <p>
-              STACK USED IN THIS PORTFOLIO PROJECT:
+              STACK USED IN THIS PORTFOLIO WEBSITE:
               <FaReact className="stackIcons" />
               <FaNodeJs className="stackIcons" />
               <FaCss3 className="stackIcons" />

@@ -6,7 +6,6 @@ import Header from "./pages/header";
 import Footer from "./pages/footer";
 import About from "./components/about";
 import Projects from "./components/projects";
-import ChatBox from "./components/chatbox";
 
 const App = () => {
   return (
@@ -19,7 +18,6 @@ const App = () => {
           <Route path="/about" component={About} />
           <Route path="/projects" component={Projects} />
         </Switch>
-        <ChatBox />
         <Footer />
       </div>
     </>
