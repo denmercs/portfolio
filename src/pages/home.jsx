@@ -24,13 +24,11 @@ const Home = () => {
           </div>
 
           <div className="repoMessage">
-            <p>
-              STACK USED IN THIS PORTFOLIO WEBSITE:
-              <FaReact className="stackIcons" />
-              <FaNodeJs className="stackIcons" />
-              <FaCss3 className="stackIcons" />
-              <FaHtml5 className="stackIcons" />
-            </p>
+            <p>STACK USED IN THIS PORTFOLIO WEBSITE:</p>
+            <FaReact className="stackIcons" />
+            <FaNodeJs className="stackIcons" />
+            <FaCss3 className="stackIcons" />
+            <FaHtml5 className="stackIcons" />
           </div>
         </Animated>
       </Container>
