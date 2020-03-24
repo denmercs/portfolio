@@ -12,7 +12,9 @@ const Project = prop => {
     role,
     source,
     repo,
-    website
+    website,
+    stack,
+    api
   } = prop.project;
 
   return (
@@ -25,6 +27,8 @@ const Project = prop => {
             <p>{description}</p>
             <p>Location: {location}</p>
             <p>Role: {role}</p>
+            <p>Stack: {stack}</p>
+            {api !== "" ? <p>API/Library: {api}</p> : null}
 
             <div className="card-links">
               <a href={repo} target="_blank" rel="noopener noreferrer">

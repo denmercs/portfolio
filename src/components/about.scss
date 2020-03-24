@@ -33,6 +33,19 @@
     text-transform: uppercase;
     letter-spacing: 0.05rem;
 
+    a {
+      text-decoration: none;
+      -webkit-text-decoration-style: none;
+      text-decoration-style: none;
+    }
+
+    h5 {
+      &:hover,
+      &:active {
+        color: #7ac86e;
+      }
+    }
+
     @media only screen and (max-width: 990px) {
       font-size: 0.8rem;
     }
