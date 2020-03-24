@@ -10,16 +10,17 @@ const Projects = () => {
       company_name: "Denmercs Photography LLC",
       application: "Wedding Photographer Website",
       description: `
-      A fully functional web application that allows wedding clients to inquire, message the photographer through the chatbox, and all with the integration of Pinterest for portfolio albums.
+      A fully functional web application that allows wedding clients to inquire, message the photographer through the chatbox, and with the integration of Facebook Graph API for portfolio albums.
       All the UI, Graphics, and Pictures were created by Dennis Mercado. This is a real project built with Backend and Front End development in mind.
-      Developed full-stack web applications with processed, analyzed and rendered data visually. Planned, wrote and executed the file structure for the application and setup Redux as the state management tool.
       `,
       location: "USA",
       role: "Full Stack Developer",
       source: "https://youtu.be/aRh1vqXKpQo",
-      repo: "www.google.com",
-      website: "www.google.com",
-      direction: "left"
+      repo: "https://github.com/denmercs/denmercsphotography-fe",
+      website: "www.denmercs.com",
+      direction: "left",
+      stack: "React JS | Redux | Express JS | PostgreSQL",
+      api: "Facebook Graph, Geocode, MapGL - Uber, React Chatbot"
     },
     {
       id: 2,
@@ -35,7 +36,9 @@ const Projects = () => {
       source: "https://www.youtube.com/embed/KM4jNYUOg7Y",
       repo: "https://github.com/labs17-s-a-f-e",
       website: "https://bit.ly/2UREDVN",
-      direction: "right"
+      direction: "right",
+      stack: "React JS | Redux | Express JS | PostgreSQL.",
+      api: "Frontline SMS, Reverse Geocoding, Redux persist"
     },
     {
       id: 3,
@@ -54,7 +57,9 @@ const Projects = () => {
       source: "https://s5.gifyu.com/images/FifthDemo.93311408.gif",
       repo: "https://github.com/buildweek-5th-wheel",
       website: "https://5th-wheel.now.sh/",
-      direction: "left"
+      direction: "left",
+      stack: "React JS | Redux | Express JS | PostgreSQL.",
+      api: ""
     }
   ];
 

@@ -5,6 +5,7 @@ import { Container } from "react-bootstrap";
 import GithubCalendar from "github-calendar";
 import { getUser } from "../redux/actions/userActions";
 import { Animated } from "react-animated-css";
+import { Link } from "react-router-dom";
 
 const About = props => {
   const { login, followers, public_repos } = props.dataUser.user;
@@ -19,6 +20,14 @@ const About = props => {
   return (
     <Animated isVisible={true} className="animated bounce delay-4s">
       <Container className="about">
+        <div className="aboutGithub">
+          <a href="https://github.com/denmercs" target="_blank">
+            <h5>Github Handle: {login}</h5>
+          </a>
+          <p>Followers: {followers}</p>
+          <p>Repositories: {public_repos}</p>
+          <div className="calendar"></div>
+        </div>
         <h3>About</h3>
         <div className="aboutStory">
           <p>
@@ -37,12 +46,6 @@ const About = props => {
             stopped studying and pursuing professional growth. I strive to use
             my skills in helping clients fulfill their business needs using IT.
           </p>
-        </div>
-        <div className="aboutGithub">
-          <h5>Github Handle: {login}</h5>
-          <p>Followers: {followers}</p>
-          <p>Repositories: {public_repos}</p>
-          <div className="calendar"></div>
         </div>
       </Container>
     </Animated>
