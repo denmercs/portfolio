@@ -1,5 +1,4 @@
 .about {
-  padding: 2rem 0;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
@@ -9,6 +8,9 @@
   flex-direction: column;
   color: #fff;
 
+  h3 {
+    margin: 1.5rem 0;
+  }
   @media only screen and (max-width: 990px) {
     padding: 2rem;
   }
@@ -18,9 +20,10 @@
   }
 
   .aboutStory {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     text-align: justify;
     text-justify: inter-word;
+    line-height: 1.2;
 
     @media only screen and (max-width: 990px) {
       font-size: 0.8rem;
@@ -28,7 +31,6 @@
   }
 
   .aboutGithub {
-    padding: 2rem 0;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
@@ -40,10 +42,16 @@
     }
 
     h5 {
+      margin: 1.5rem 0;
       &:hover,
       &:active {
         color: #7ac86e;
       }
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
     }
 
     @media only screen and (max-width: 990px) {
@@ -68,7 +76,6 @@
 }
 
 .contrib-column {
-  margin-top: 1rem;
   font-size: 0.8rem;
   @media only screen and (max-width: 990px) {
     font-size: 0.25rem;

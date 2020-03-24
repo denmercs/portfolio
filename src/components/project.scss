@@ -1,13 +1,11 @@
 .project {
-  padding: 2rem 0;
-
   @media only screen and (max-width: 440px) {
     padding: 0.5rem 0;
   }
 
   .card {
     background-color: #dfe1e4;
-    padding: 2rem;
+    padding: 1rem;
     margin: 1rem;
     display: -webkit-box;
     display: flex;
