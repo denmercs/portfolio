@@ -10,7 +10,7 @@ const Projects = () => {
       company_name: "Denmercs Photography LLC",
       application: "Wedding Photographer Website",
       description: `
-      A fully functional web application that allows wedding clients to inquire, message the photographer through the chatbox, and with the integration of Facebook Graph API for portfolio albums.
+      A fully functional web application that allows wedding clients to inquire, view all the portfolio images, visibile mapping coordinates and with the integration of Facebook Graph API for portfolio albums.
       All the UI, Graphics, and Pictures were created by Dennis Mercado. This is a real project built with Backend and Front End development in mind.
       `,
       location: "USA",
@@ -20,7 +20,7 @@ const Projects = () => {
       website: "https://www.denmercs.com",
       direction: "left",
       stack: "React JS | Redux | Express JS | PostgreSQL",
-      api: "Facebook Graph, Geocode, MapGL - Uber, React Chatbot"
+      api: "Facebook Graph, Geocode, MapGL - Uber"
     },
     {
       id: 2,
