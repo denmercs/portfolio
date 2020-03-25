@@ -10,7 +10,7 @@ const Projects = () => {
       company_name: "Denmercs Photography LLC",
       application: "Wedding Photographer Website",
       description: `
-      A fully functional web application that allows wedding clients to inquire, view all the portfolio images, visibile mapping coordinates and with the integration of Facebook Graph API for portfolio albums.
+      A fully functional web application that allows wedding clients to inquire, view all the portfolio images, visible mapping coordinates and with the integration of Facebook Graph API for portfolio albums.
       All the UI, Graphics, and Pictures were created by Dennis Mercado. This is a real project built with Backend and Front End development in mind.
       `,
       location: "USA",
