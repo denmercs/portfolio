@@ -17,7 +17,7 @@ const Projects = () => {
       role: "Full Stack Developer",
       source: "https://youtu.be/aRh1vqXKpQo",
       repo: "https://github.com/denmercs/denmercsphotography-fe",
-      website: "www.denmercs.com",
+      website: "https://www.denmercs.com",
       direction: "left",
       stack: "React JS | Redux | Express JS | PostgreSQL",
       api: "Facebook Graph, Geocode, MapGL - Uber, React Chatbot"
