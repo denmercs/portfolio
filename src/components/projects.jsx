@@ -39,33 +39,12 @@ const Projects = () => {
       direction: "right",
       stack: "React JS | Redux | Express JS | PostgreSQL.",
       api: "Frontline SMS, Reverse Geocoding, Redux persist"
-    },
-    {
-      id: 3,
-      company_name: "5th Wheel",
-      application: "Software for campers",
-      description: `A fully functional web application 
-      that allows users can get access and use these previously unknown/unavailable sites, 
-      and Landowners get to cash in on otherwise dormant or underutilized land.
-      This is a personal project built with Backend and Front End development in mind. 
-      Developed full-stack web applications with processed, analyzed and rendered data visually.
-      Planned, wrote and executed the file structure for the application and setup Redux as the state management tool. 
-      Styled components and connect the Redux state in the web application.
-      Researched color theory and came up with a color palette appropriate for this project.`,
-      location: "USA",
-      role: "Front End Developer",
-      source: "https://s5.gifyu.com/images/FifthDemo.93311408.gif",
-      repo: "https://github.com/buildweek-5th-wheel",
-      website: "https://5th-wheel.now.sh/",
-      direction: "left",
-      stack: "React JS | Redux | Express JS | PostgreSQL.",
-      api: ""
     }
   ];
 
   return (
     <Container className="projects">
-      <h3>Projects</h3>
+      <h3>Real Projects</h3>
       <div className="cards">
         {projects.map(project => (
           <Project project={project} key={project.id} />
