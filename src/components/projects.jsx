@@ -15,7 +15,7 @@ const Projects = () => {
       `,
       location: "USA",
       role: "Full Stack Developer",
-      source: "https://youtu.be/aRh1vqXKpQo",
+      source: "https://youtu.be/74s7Y6dVs9I",
       repo: "https://github.com/denmercs/denmercsphotography-fe",
       website: "https://www.denmercs.com",
       direction: "left",
