@@ -10,10 +10,9 @@ const Projects = () => {
       company_name: "Denmercs Photography LLC",
       application: "Wedding Photographer Website",
       description: `
-      A fully functional web application that allows wedding clients to inquire, view all the portfolio images, visible mapping coordinates and with the integration of Facebook Graph API for portfolio albums.
-      All the UI, Graphics, and Pictures were created by Dennis Mercado. This is a real project built with Backend and Front End development in mind.
+      A fully functional web application that allows wedding clients to inquire about prices and view portfolio images and visible mapping coordinates; integration of Facebook Graph API for portfolio albums.
       `,
-      location: "USA",
+      location: "Sun Prairie, Wisconsin USA",
       role: "Full Stack Developer",
       source: "https://www.youtube.com/embed/74s7Y6dVs9I",
       repo: "https://github.com/denmercs/denmercsphotography-fe",
@@ -26,10 +25,7 @@ const Projects = () => {
       id: 2,
       company_name: "Safe Mother's, Safe Babies",
       application: "SMS Dispatch System and Admin Web Application",
-      description: `Safe Mothers, Safe Babies (SAFE) believes that no woman should die while bringing life into the world, 
-      and that no child should die when his/her life is just beginning. 
-      The application will allow the mother to register her name and village, 
-      the system will dispatch the closet driver via geolocation and notify the mother that the driver is coming. 
+      description: `Safe Mothers, Safe Babies is a nonprofit organization based in Uganda, East Africa. This application allows Ugandan mothers to request trained emergency drivers for safe transport to hospitals via text message (SMS). 
       For more information please watch the video. `,
       location: "Uganda, Africa",
       role: "Full Stack Developer",

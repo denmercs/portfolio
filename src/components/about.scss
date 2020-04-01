@@ -9,7 +9,7 @@
   color: #fff;
 
   h3 {
-    margin: 1.5rem 0;
+    margin: 1rem 0;
   }
   @media only screen and (max-width: 990px) {
     padding: 2rem;
@@ -20,7 +20,7 @@
   }
 
   .aboutStory {
-    font-size: 1.15rem;
+    font-size: 1rem;
     text-align: justify;
     text-justify: inter-word;
     line-height: 1.2;
@@ -42,7 +42,7 @@
     }
 
     h5 {
-      margin: 1.5rem 0;
+      margin: 1rem 0;
       &:hover,
       &:active {
         color: #29a19c;
@@ -76,7 +76,7 @@
 }
 
 .contrib-column {
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   @media only screen and (max-width: 990px) {
     font-size: 0.25rem;
   }
