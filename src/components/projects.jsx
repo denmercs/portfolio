@@ -19,7 +19,7 @@ const Projects = () => {
       website: "https://www.denmercs.com",
       direction: "left",
       stack: "React JS | Redux | Express JS | PostgreSQL",
-      api: "Facebook Graph, Geocode, MapGL - Uber"
+      api: "Facebook Graph, Geocode, MapGL - Uber",
     },
     {
       id: 2,
@@ -30,19 +30,19 @@ const Projects = () => {
       location: "Uganda, Africa",
       role: "Full Stack Developer",
       source: "https://www.youtube.com/embed/KM4jNYUOg7Y",
-      repo: "https://github.com/labs17-s-a-f-e",
+      repo: "https://github.com/Lambda-School-Labs/safe-mothers-be",
       website: "https://bit.ly/2UREDVN",
       direction: "right",
       stack: "React JS | Redux | Express JS | PostgreSQL.",
-      api: "Frontline SMS, Reverse Geocoding, Redux persist"
-    }
+      api: "Frontline SMS, Reverse Geocoding, Redux persist",
+    },
   ];
 
   return (
     <Container className="projects">
       <h3>Real Projects</h3>
       <div className="cards">
-        {projects.map(project => (
+        {projects.map((project) => (
           <Project project={project} key={project.id} />
         ))}
       </div>
