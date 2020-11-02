@@ -23,6 +23,7 @@ const Header = () => {
               <Link to="/">Home</Link>
               <Link to="/projects">Projects</Link>
               <Link to="/about">About</Link>
+              <Link to="/contact">Contact</Link>
               <a
                 href="https://resume.creddle.io/resume/it3l2sf6wbv"
                 target="_blank"
