@@ -2,6 +2,7 @@ import React from "react";
 import Project from "../components/project";
 import { Container } from "react-bootstrap";
 import "./projects.scss";
+import gosavemore from "../assets/gosavemore.png"
 
 const Projects = () => {
   let projects = [
@@ -14,7 +15,7 @@ const Projects = () => {
       `,
       location: "USA",
       role: "Full Stack Developer",
-      source: "https://drive.google.com/file/d/1qoScZng9aFbJqdlYI15YzbLX3mtwobe2/view?usp=sharing",
+      source: gosavemore,
       repo: "https://github.com/gosavemore",
       website: "https://www.gosavemore.com",
       direction: "left",
