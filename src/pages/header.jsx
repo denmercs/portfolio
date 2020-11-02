@@ -21,8 +21,8 @@ const Header = () => {
           <Navbar.Collapse>
             <Nav className="test" id="margin-0">
               <Link to="/">Home</Link>
-              <Link to="/about">About</Link>
               <Link to="/projects">Projects</Link>
+              <Link to="/about">About</Link>
               <a
                 href="https://resume.creddle.io/resume/it3l2sf6wbv"
                 target="_blank"
