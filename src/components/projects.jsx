@@ -7,6 +7,22 @@ const Projects = () => {
   let projects = [
     {
       id: 1,
+      company_name: "gosavemore",
+      application: "Ecommerce website",
+      description: `
+      GOSAVEMORE is a mock concept for an e-commerce website for grocery shoppers. This project was using React, SASS, Redux, Express, JWT, and PostgreSQL by 2 React developers and a Node/Express developer
+      `,
+      location: "USA",
+      role: "Full Stack Developer",
+      source: "https://drive.google.com/file/d/1qoScZng9aFbJqdlYI15YzbLX3mtwobe2/view?usp=sharing",
+      repo: "https://github.com/gosavemore",
+      website: "https://www.gosavemore.com",
+      direction: "left",
+      stack: "React JS | Redux | Express JS | PostgreSQL",
+      api: "React-Materialize, Redux-Thunk, React-Hook-Form",
+    },
+    {
+      id: 2,
       company_name: "Denmercs Photography LLC",
       application: "Wedding Photographer Website",
       description: `
@@ -22,7 +38,7 @@ const Projects = () => {
       api: "Facebook Graph, Geocode, MapGL - Uber",
     },
     {
-      id: 2,
+      id: 3,
       company_name: "Safe Mother's, Safe Babies",
       application: "SMS Dispatch System and Admin Web Application",
       description: `Safe Mothers, Safe Babies is a nonprofit organization based in Uganda, East Africa. This application allows Ugandan mothers to request trained emergency drivers for safe transport to hospitals via text message (SMS). 
