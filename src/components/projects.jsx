@@ -1,17 +1,15 @@
 import React from "react";
 import Project from "../components/project";
-import { Container } from "react-bootstrap";
-import "./projects.scss";
-import gosavemore from "../assets/gosavemore.png"
+import gosavemore from "../assets/gosavemore.png";
 
 const Projects = () => {
   let projects = [
     {
       id: 1,
-      company_name: "gosavemore",
+      company_name: "gosavemore, LLC",
       application: "Ecommerce website",
       description: `
-      GOSAVEMORE is a mock concept for an e-commerce website for grocery shoppers. This project was using React, SASS, Redux, Express, JWT, and PostgreSQL by 2 React developers and a Node/Express developer
+      GOSAVEMORE is a mock concept for an e-commerce website for grocery shoppers. This project was using React, SASS, Redux, Express, JWT, and Mongodb by 2 React developers and a Node/Express developer
       `,
       location: "USA",
       role: "Full Stack Developer",
@@ -24,7 +22,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      company_name: "Denmercs Photography LLC",
+      company_name: "Denmercs Photography, LLC",
       application: "Wedding Photographer Website",
       description: `
       A fully functional web application that allows wedding clients to inquire about prices and view portfolio images and visible mapping coordinates; integration of Facebook Graph API for portfolio albums.
@@ -56,14 +54,14 @@ const Projects = () => {
   ];
 
   return (
-    <Container className="projects">
+    <div className="projects">
       <h3>Real Projects</h3>
-      <div className="cards">
+      <div className="projects-container">
         {projects.map((project) => (
           <Project project={project} key={project.id} />
         ))}
       </div>
-    </Container>
+    </div>
   );
 };
 

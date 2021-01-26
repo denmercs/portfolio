@@ -1,6 +1,0 @@
-export const GET_USER_START = "GET_USER_START";
-export const GET_USER_SUCCESS = "GET_USER_SUCCESS";
-export const GET_UESR_FAIL = "GET_UESR_FAIL";
-export const GET_REPO_START = "GET_REPO_START";
-export const GET_REPO_SUCCESS = "GET_REPO_SUCCESS";
-export const GET_REPO_FAIL = "GET_REPO_FAIL";

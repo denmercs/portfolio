@@ -1,37 +1,28 @@
 import React from "react";
-import "../pages/home.scss";
-import { Container } from "react-bootstrap";
 import { Animated } from "react-animated-css";
-import { FaReact, FaNodeJs, FaCss3, FaHtml5 } from "react-icons/fa";
+import videoSource from "../assets/media/video.mp4";
+import { Button } from "antd";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <>
-      <Container className="home">
-        <div className="home-hero">
-          <img
-            src={require("../assets/dennis.png")}
-            alt="Dennis"
-            className="home-hero-img"
-          />
+      <Animated isVisible={true} className="animated bounce delay-4s">
+        <div className="home">
+          <div className="home-background">
+            <video autoPlay muted loop id="myVideo">
+              <source src={videoSource} type="video/mp4" />
+            </video>
+          </div>
+          <div className="home-content">
+            <h1>Hello, I'm Dennis Mercado.</h1>
+            <p>I'm a full-stack web developer</p>
+            <Button type="primary" className="home-button">
+              <Link to="/projects">VIEW MY WORK</Link>
+            </Button>
+          </div>
         </div>
-        <Animated isVisible={true} className="animated bounce delay-4s">
-          <div className="message ">
-            <p>
-              “Formal education will make you a living; self-education will make
-              you a fortune.”
-            </p>
-          </div>
-
-          <div className="repoMessage">
-            <p>STACK USED IN THIS PORTFOLIO WEBSITE:</p>
-            <FaReact className="stackIcons" />
-            <FaNodeJs className="stackIcons" />
-            <FaCss3 className="stackIcons" />
-            <FaHtml5 className="stackIcons" />
-          </div>
-        </Animated>
-      </Container>
+      </Animated>
     </>
   );
 };
