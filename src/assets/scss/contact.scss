@@ -1,0 +1,29 @@
+.contact {
+  margin-top: 26px;
+
+  h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media only screen and (max-width: 990px) {
+      font-size: 16px;
+    }
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+
+    p {
+      font-size: 1.5rem;
+      margin: 0 2rem;
+      margin-top: 0.5rem;
+
+      @media only screen and (max-width: 990px) {
+        font-size: 14px;
+      }
+    }
+  }
+}

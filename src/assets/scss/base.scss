@@ -1,0 +1,30 @@
+@import "./custom.scss";
+@import "./header.scss";
+@import "./home.scss";
+@import "./projects.scss";
+@import "./project.scss";
+@import "./about.scss";
+@import "./contact.scss";
+@import "./footer.scss";
+@import "./sidebar.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $white-two;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+p {
+  color: $black-two;
+}
+
+.sidebarMenu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

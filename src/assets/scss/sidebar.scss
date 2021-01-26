@@ -1,0 +1,54 @@
+.sidebar {
+  &-icon {
+    font-size: 40px;
+    color: $white-one;
+
+    &:hover,
+    &:active {
+      color: $primary-color;
+    }
+  }
+
+  &-close {
+    font-size: 40px;
+    color: $white-three;
+    margin-bottom: 60px;
+
+    &:hover,
+    &:active {
+      color: $primary-color;
+    }
+  }
+
+  z-index: 999;
+}
+
+.open {
+  //   margin-left: 25%;
+  width: 200px;
+  padding-top: 40px;
+  display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: black;
+  transition: ease-in 2s;
+
+  a {
+    color: $white-three;
+    padding: 10px 0;
+    text-transform: uppercase;
+
+    &:hover,
+    &:active {
+      color: $primary-color;
+    }
+  }
+}
+
+.close {
+  display: none;
+  transition: ease-in 2s;
+}
