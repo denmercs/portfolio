@@ -10,9 +10,9 @@ const Header = ({ isTabletOrMobileDevice, isVisible, setIsVisible }) => {
 
   return (
     <div className="header">
-      <div className="logo">
+      <div className="header-logo">
         <Link to="/">
-          <img src={Logo} alt="logo-img" className="logo-img" />
+          <img src={Logo} alt="logo image" />
         </Link>
       </div>
       {isTabletOrMobileDevice ? (
