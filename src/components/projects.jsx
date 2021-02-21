@@ -14,7 +14,7 @@ const Projects = () => {
       location: "USA",
       role: "Full Stack Developer",
       source: gosavemore,
-      repo: "https://github.com/gosavemore",
+      repo: "https://github.com/gosavemore-com",
       website: "https://www.gosavemore.com",
       direction: "left",
       stack: "React JS | Redux | Express JS | PostgreSQL",
