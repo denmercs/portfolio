@@ -18,12 +18,12 @@ const About = () => {
               college. I was working as a freelance graphic designer online at
               that time and while learning how to code in my spare time. I moved
               here in the United States in 2015, and I have been pursuing my
-              passion and dream to become a Software Developer since then.
+              passion and dream to become a Software/Web Developer since then.
             </p>
             <p>
               I enrolled in a bootcamp called Lambda School to become a Full
-              Stack Developer. Although my professional path has taken many
-              twists and turns. I've never stopped learning and pursuing
+              Stack Software Developer. Although my professional path has taken
+              many twists and turns. I've never stopped learning and pursuing
               professional software development career.
             </p>
           </div>
