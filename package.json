@@ -10,7 +10,7 @@
     "antd": "^4.11.1",
     "axios": "^0.21.1",
     "github-calendar": "^2.1.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "popmotion": "^8.7.1",
     "react": "^16.13.1",
     "react-animated-css": "^1.2.1",
